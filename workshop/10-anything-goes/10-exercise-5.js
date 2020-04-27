@@ -13,6 +13,15 @@
 
 let armstrongNumbers = [];
 
-// write your loop here...
+for (let i = 0; i <= 999; i++) {
+  stringNumber = String(i);
+  let cubedSum =
+    Number(stringNumber.charAt(0)) ** 3 +
+    Number(stringNumber.charAt(1)) ** 3 +
+    Number(stringNumber.charAt(2)) ** 3;
+  if (cubedSum === i) {
+    armstrongNumbers.push(i);
+  }
+}
 
 console.log(armstrongNumbers);
